@@ -49,3 +49,28 @@ drops[i]++;
 }
 
 setInterval(draw, 110);
+
+const grid = document.getElementById("postGrid");
+
+if(grid && typeof posts !== "undefined"){
+
+posts.forEach(post => {
+
+const card = document.createElement("div");
+
+card.className="card";
+
+card.innerHTML = `
+<h3>${post.title}</h3>
+<p>${post.date}</p>
+`;
+
+card.onclick = () => {
+window.location.href = post.file;
+};
+
+grid.appendChild(card);
+
+});
+
+}
