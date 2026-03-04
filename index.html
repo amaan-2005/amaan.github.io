@@ -1,45 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Amaan's Workspace</title>
+
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" type="image/png" href="favicon.png">
+
+<title>Amaan's Workspace</title>
+
 <link rel="stylesheet" href="style.css">
+<link rel="icon" href="favicon.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
 
 <header class="header">
-<div class="logo">Amaan’s Workspace</div>
 
-<div class="search-container">
-<input type="text" placeholder="Search @ Amaan’s Workspace">
+<div class="logo">
+Amaan's Workspace
 </div>
+
+<input
+type="text"
+id="searchInput"
+class="search"
+placeholder="Search @ Amaan's Workspace"
+>
 
 <div class="profile">
-<img src="favicon.png" id="profilePic">
 
-<div class="profile-popup" id="profilePopup">
-
-<div class="profile-header">
-<img src="favicon.png">
-<h3>Mursith Amaan</h3>
-<p class="role">Creator • Amaan's Workspace</p>
-</div>
-
-<div class="profile-divider"></div>
-
-<div class="profile-links">
-<a href="profile.html" class="profile-btn">View Profile</a>
-</div>
+<a href="profile.html">
+<img src="profile.png">
+</a>
 
 </div>
-</div>
+
 </header>
 
 <main class="grid" id="postGrid"></main>
 
 <footer>
-© Amaan’s Workspace
+© Amaan's Workspace
 </footer>
 
 <script src="posts.js"></script>
