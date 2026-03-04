@@ -1,14 +1,10 @@
-const profileIcon=document.getElementById("profileIcon");
-const popup=document.getElementById("profilePopup");
+const profileIcon = document.getElementById("profileIcon");
+const popup = document.getElementById("profilePopup");
 
-profileIcon.addEventListener("click",()=>{
-
-popup.style.display=
-popup.style.display==="block"
-?"none"
-:"block";
-
-});
+profileIcon.onclick = () => {
+  popup.style.display =
+    popup.style.display === "block" ? "none" : "block";
+};
 
 const grid=document.getElementById("postGrid");
 
