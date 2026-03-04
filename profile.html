@@ -1,14 +1,217 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Amaan Profile</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <link rel="icon" type="image/png" href="favicon.png">
 
-<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== PAGE BACKGROUND ===== */
+
+body{
+
+margin:0;
+
+font-family:'Poppins',sans-serif;
+
+background:
+linear-gradient(
+rgba(12,12,15,0.85),
+rgba(12,12,15,0.95)
+),
+url("background.jpg");
+
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+min-height:100vh;
+
+color:white;
+
+}
+
+/* ===== GLASS PROFILE CARD ===== */
+
+.amaan-profile-card{
+
+max-width:700px;
+
+padding:50px;
+
+border-radius:28px;
+
+background:rgba(255,255,255,0.06);
+
+backdrop-filter:blur(35px);
+
+border:1px solid rgba(255,255,255,0.12);
+
+box-shadow:
+0 20px 60px rgba(0,0,0,0.7),
+0 0 40px rgba(138,180,248,0.15);
+
+text-align:center;
+
+transition:0.4s;
+
+}
+
+/* hover glow */
+
+.amaan-profile-card:hover{
+
+transform:translateY(-6px);
+
+box-shadow:
+0 25px 80px rgba(0,0,0,0.8),
+0 0 60px rgba(138,180,248,0.25);
+
+}
+
+/* ===== PROFILE IMAGE ===== */
+
+.amaan-profile-avatar{
+
+width:160px;
+height:160px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:4px solid rgba(255,255,255,0.2);
+
+margin-bottom:25px;
+
+transition:0.4s;
+
+}
+
+.amaan-profile-avatar:hover{
+
+transform:scale(1.05);
+
+border-color:#8ab4f8;
+
+}
+
+/* ===== NAME ===== */
+
+.amaan-profile-name{
+
+font-family:'Orbitron',sans-serif;
+
+font-size:32px;
+
+letter-spacing:2px;
+
+margin-bottom:8px;
+
+}
+
+/* ===== TAGLINE ===== */
+
+.amaan-profile-tagline{
+
+opacity:0.8;
+
+font-size:16px;
+
+margin-bottom:25px;
+
+}
+
+/* ===== BIO ===== */
+
+.amaan-profile-bio{
+
+line-height:1.8;
+
+font-size:15px;
+
+margin-bottom:30px;
+
+}
+
+/* ===== SOCIAL LINKS ===== */
+
+.amaan-social-links{
+
+display:flex;
+
+justify-content:center;
+
+gap:15px;
+
+flex-wrap:wrap;
+
+}
+
+.amaan-social-links a{
+
+padding:10px 22px;
+
+border-radius:30px;
+
+background:rgba(255,255,255,0.08);
+
+text-decoration:none;
+
+color:#8ab4f8;
+
+font-weight:500;
+
+transition:0.3s;
+
+border:1px solid rgba(255,255,255,0.12);
+
+}
+
+.amaan-social-links a:hover{
+
+background:rgba(138,180,248,0.2);
+
+color:white;
+
+transform:translateY(-3px);
+
+box-shadow:0 0 15px rgba(138,180,248,0.6);
+
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:600px){
+
+.amaan-profile-card{
+
+margin:20px;
+padding:35px;
+
+}
+
+.amaan-profile-name{
+
+font-size:24px;
+
+}
+
+}
+
+</style>
 
 </head>
 
@@ -16,10 +219,14 @@
 
 <div class="amaan-profile-card">
 
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhP_U6JMgkIzzjPNI8saZp_XDtVpZ384VXxjamhP390MXPePpSgadnORorO__IS8Fa6T1jPBMv3h6_WBwxT_TJUUtamjbZmfZdjeWsI53a_7bIK4WVlC4Gyg94Qlx6gaRZnS5IKgrsVy0HoebAjVyMoFGPJZFFgB6YK7jalI5LZDegO_1yY7ZB0O5yhoHI/s4672/Mursith%20Amaan.jpeg"
-class="amaan-profile-avatar">
+<img
+src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhP_U6JMgkIzzjPNI8saZp_XDtVpZ384VXxjamhP390MXPePpSgadnORorO__IS8Fa6T1jPBMv3h6_WBwxT_TJUUtamjbZmfZdjeWsI53a_7bIK4WVlC4Gyg94Qlx6gaRZnS5IKgrsVy0HoebAjVyMoFGPJZFFgB6YK7jalI5LZDegO_1yY7ZB0O5yhoHI/s4672/Mursith%20Amaan.jpeg"
+class="amaan-profile-avatar"
+alt="Amaan Profile">
 
-<h1 class="amaan-profile-name">MURSITH AMAAN N</h1>
+<h1 class="amaan-profile-name">
+MURSITH AMAAN N
+</h1>
 
 <p class="amaan-profile-tagline">
 B.Sc Computer Science | Tech Enthusiast
@@ -27,27 +234,38 @@ B.Sc Computer Science | Tech Enthusiast
 
 <div class="amaan-profile-bio">
 
-Assalamualaikum Warahmatullahi Wabarakatuh!  
+Assalamualaikum Warahmatullahi Wabarakatuh!
+
 I am <strong>Mursith Amaan N</strong>, currently pursuing my B.Sc in Computer Science at E.G.S Pillay Arts & Science College (A), Nagapattinam.
 
 I have a strong passion for software development, coding, and building modern applications.
 
-Currently working on the project  
+Currently working on the project
+
 <strong>SMART ACADEMIC PERFORMANCE ANALYTICS SYSTEM</strong>.
 
 </div>
 
 <div class="amaan-social-links">
 
-<a href="https://amaan-2005.github.io" target="_blank">GitHub</a>
+<a href="https://amaan-2005.github.io" target="_blank">
+GitHub
+</a>
 
-<a href="https://youtube.com/@amaan.bin.sulaiman" target="_blank">YouTube</a>
+<a href="https://youtube.com/@amaan.bin.sulaiman" target="_blank">
+YouTube
+</a>
 
-<a href="https://x.com/amanbinsulaiman" target="_blank">X</a>
+<a href="https://x.com/amanbinsulaiman" target="_blank">
+X
+</a>
 
-<a href="https://www.facebook.com/amaan.bin.sulaiman" target="_blank">Facebook</a>
+<a href="https://www.facebook.com/amaan.bin.sulaiman" target="_blank">
+Facebook
+</a>
 
 </div>
+
 </div>
 
 </body>
