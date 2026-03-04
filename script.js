@@ -62,7 +62,6 @@ card.className="card";
 
 card.innerHTML = `
 <h3>${post.title}</h3>
-<p>${post.date}</p>
 `;
 
 card.onclick = () => {
