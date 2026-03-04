@@ -1,23 +1,91 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Profile</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
+<style>
+  .amaan-profile-card {
+    background: rgba(35,35,40,0.65);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 40px 30px;
+    max-width: 650px;
+    margin: 40px auto;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.7);
+    text-align: center;
+    color: #e4e4e4;
+  }
 
-<header class="header">
-<div class="logo">Amaan’s Workspace</div>
-</header>
+  .amaan-profile-avatar {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    border: 4px solid rgba(255,255,255,0.2);
+    margin-bottom: 25px;
+    transition: 0.4s ease;
+  }
 
-<div style="padding:100px; text-align:center;">
-<h1>Mursith Amaan</h1>
-<p>B.Sc Computer Science Student</p>
+  .amaan-profile-avatar:hover {
+    transform: scale(1.05);
+    border-color: #8ab4f8;
+  }
+
+  .amaan-profile-name {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+
+  .amaan-profile-tagline {
+    font-size: 16px;
+    color: #94a3b8;
+    margin-bottom: 25px;
+  }
+
+  .amaan-profile-bio {
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+  }
+
+  .amaan-social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .amaan-social-links a {
+    padding: 10px 22px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 30px;
+    text-decoration: none;
+    color: #8ab4f8;
+    transition: 0.3s ease;
+  }
+
+  .amaan-social-links a:hover {
+    background: rgba(138,180,248,0.2);
+    color: #ffffff;
+    transform: translateY(-3px);
+  }
+</style>
+
+<div class="amaan-profile-card">
+  
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhP_U6JMgkIzzjPNI8saZp_XDtVpZ384VXxjamhP390MXPePpSgadnORorO__IS8Fa6T1jPBMv3h6_WBwxT_TJUUtamjbZmfZdjeWsI53a_7bIK4WVlC4Gyg94Qlx6gaRZnS5IKgrsVy0HoebAjVyMoFGPJZFFgB6YK7jalI5LZDegO_1yY7ZB0O5yhoHI/s4672/Mursith%20Amaan.jpeg" 
+       class="amaan-profile-avatar" 
+       alt="Amaan Profile">
+
+  <h1 class="amaan-profile-name">MURSITH AMAAN N</h1>
+  <p class="amaan-profile-tagline">B.Sc Computer Science | Tech Enthusiast</p>
+
+  <div class="amaan-profile-bio">
+    Assalamualaikum Warahmatullahi Wabarakatuh! I am <strong>Mursith Amaan N</strong>, currently pursuing my B.Sc in Computer Science at E.G.S Pillay Arts &amp; Science College (A), Nagapattinam. I have a strong passion for software development, coding, and building modern applications. Currently working on the <em>“SMART ACADEMIC PERFORMANCE ANALYTICS SYSTEM”</em>.
+  </div>
+
+  <div class="amaan-social-links">
+    <a href="https://amaan-2005.github.io" target="_blank">GitHub</a>
+    <a href="https://youtube.com/@amaan.bin.sulaiman" target="_blank">YouTube</a>
+    <a href="https://x.com/amanbinsulaiman" target="_blank">X</a>
+    <a href="https://www.facebook.com/amaan.bin.sulaiman" target="_blank">Facebook</a>
+  </div>
+
 </div>
-
-<footer>
-© Amaan’s Workspace
-</footer>
-
-</body>
-</html>
