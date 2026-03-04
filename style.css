@@ -108,3 +108,65 @@ text-align:center;
 padding:30px;
 color:#888;
 }
+
+/* PROFILE POPUP UPGRADE */
+
+.profile-popup{
+position:absolute;
+right:0;
+top:65px;
+width:240px;
+padding:25px;
+border-radius:22px;
+
+background:rgba(255,255,255,0.06);
+backdrop-filter:blur(30px);
+
+border:1px solid rgba(255,255,255,0.08);
+
+display:none;
+text-align:center;
+
+box-shadow:0 0 40px rgba(0,0,0,0.4);
+}
+
+.profile-header img{
+width:70px;
+height:70px;
+border-radius:50%;
+margin-bottom:10px;
+}
+
+.profile-header h3{
+font-size:16px;
+font-weight:600;
+letter-spacing:0.5px;
+}
+
+.role{
+font-size:12px;
+color:#aaa;
+margin-top:3px;
+}
+
+.profile-divider{
+height:1px;
+background:rgba(255,255,255,0.08);
+margin:15px 0;
+}
+
+.profile-btn{
+display:block;
+padding:10px;
+border-radius:12px;
+text-decoration:none;
+
+background:rgba(255,255,255,0.08);
+color:white;
+
+transition:0.3s;
+}
+
+.profile-btn:hover{
+background:rgba(255,255,255,0.15);
+}
